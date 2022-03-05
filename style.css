@@ -1,0 +1,22 @@
+@font-face {
+  font-family: logo;
+  src: url(assets/Norse-Bold.otf);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.side-section {
+  background-color: aliceblue;
+  flex-grow: 1;
+}
+.main {
+  flex-grow: 1.7;
+  background-color: aquamarine;
+}
+.logo-div > p {
+  font-family: logo;
+}
