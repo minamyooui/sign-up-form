@@ -16,9 +16,25 @@ body {
   background: url(assets/beach.jpg) center;
   flex-grow: 1;
 }
-.main {
-  flex-grow: 1.7;
-  background-color: aquamarine;
+.main {  
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .header {
+  background-color: aliceblue;
+  flex: 1;
+}
+
+.main .form-container {
+  background-color: antiquewhite;
+  padding-bottom: 25px;
+}
+
+.main .footer {
+  background-color: aliceblue;
+  flex: 1;
 }
 
 #logo-div {
@@ -43,4 +59,45 @@ body {
   font-family: logo;
   font-size: 80px;
   color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header > div {
+  padding: 40px;
+}
+
+.header p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+.controls > div {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-right: 70px;
+  margin-bottom: 1em;
+}
+
+form {
+  margin-left: 50px;
+}
+
+#submit {
+  position: relative;
+  top: 70px;
+}
+
+.footer p {
+  margin: 70px 50px;
 }
