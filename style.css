@@ -80,7 +80,9 @@ body {
 }
 
 .header > div {
-  padding: 40px;
+  padding: 40px 50px;
+  width: 800px;
+
 }
 
 .header p {
@@ -116,6 +118,10 @@ form input:focus {
   box-shadow: 2px 2px 2px rgb(214, 206, 206);
 }
 
+form input:invalid {
+  border: red 1px solid;
+}
+
 form input.error {
   border: red 1px solid;
 }
@@ -135,6 +141,7 @@ form #pw-div.error::after {
 
 form label {
   font-family: var(--font);
+  font-size: 16px;
 }
 
 #submit {
